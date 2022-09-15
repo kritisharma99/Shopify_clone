@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://newshopify.netlify.app/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify</title>
+  <script src="./20_files/saved_resource"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            shopifyLightGreen: "#008060",
+            shopifyGreen: "#004c3f",
+          },
+        },
+      },
+    };
+  </script>
+<style>/* ! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.absolute{position:absolute}.relative{position:relative}.top-6{top:1.5rem}.-right-3{right:-0.75rem}.mx-auto{margin-left:auto;margin-right:auto}.mx-5{margin-left:1.25rem;margin-right:1.25rem}.my-5{margin-top:1.25rem;margin-bottom:1.25rem}.my-14{margin-top:3.5rem;margin-bottom:3.5rem}.my-10{margin-top:2.5rem;margin-bottom:2.5rem}.mb-4{margin-bottom:1rem}.mr-8{margin-right:2rem}.mb-8{margin-bottom:2rem}.mt-2{margin-top:0.5rem}.mt-4{margin-top:1rem}.mt-12{margin-top:3rem}.mt-3{margin-top:0.75rem}.mt-24{margin-top:6rem}.mr-3{margin-right:0.75rem}.mt-20{margin-top:5rem}.mt-5{margin-top:1.25rem}.-mt-\[1px\]{margin-top:-1px}.mt-10{margin-top:2.5rem}.mt-32{margin-top:8rem}.mb-10{margin-bottom:2.5rem}.mb-3{margin-bottom:0.75rem}.-mb-10{margin-bottom:-2.5rem}.mr-4{margin-right:1rem}.ml-3{margin-left:0.75rem}.ml-1{margin-left:0.25rem}.inline{display:inline}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-\[1px\]{height:1px}.h-full{height:100%}.h-\[80vh\]{height:80vh}.h-20{height:5rem}.h-6{height:1.5rem}.h-5{height:1.25rem}.w-56{width:14rem}.w-\[80\%\]{width:80%}.w-48{width:12rem}.w-full{width:100%}.w-5\/6{width:83.333333%}.w-8{width:2rem}.w-5{width:1.25rem}.max-w-lg{max-width:32rem}.max-w-md{max-width:28rem}.flex-grow{flex-grow:1}.translate-y-1{--tw-translate-y:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.list-none{list-style-type:none}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-col-reverse{flex-direction:column-reverse}.flex-wrap{flex-wrap:wrap}.place-content-center{place-content:center}.place-items-center{place-items:center}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-10{gap:2.5rem}.gap-x-4{column-gap:1rem}.gap-y-8{row-gap:2rem}.gap-y-14{row-gap:3.5rem}.gap-x-10{column-gap:2.5rem}.gap-x-20{column-gap:5rem}.gap-y-5{row-gap:1.25rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.divide-blue-200 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(191 219 254 / var(--tw-divide-opacity))}.overflow-hidden{overflow:hidden}.rounded{border-radius:0.25rem}.rounded-lg{border-radius:0.5rem}.rounded-full{border-radius:9999px}.border{border-width:1px}.border-0{border-width:0px}.border-l-\[3px\]{border-left-width:3px}.border-transparent{border-color:transparent}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity))}.bg-\[\#FBF7ED\]{--tw-bg-opacity:1;background-color:rgb(251 247 237 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219 / var(--tw-bg-opacity))}.bg-shopifyLightGreen{--tw-bg-opacity:1;background-color:rgb(0 128 96 / var(--tw-bg-opacity))}.bg-shopifyGreen{--tw-bg-opacity:1;background-color:rgb(0 76 63 / var(--tw-bg-opacity))}.bg-\[\#F3FCF4\]{--tw-bg-opacity:1;background-color:rgb(243 252 244 / var(--tw-bg-opacity))}.bg-\[\#002e25\]{--tw-bg-opacity:1;background-color:rgb(0 46 37 / var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.object-cover{object-fit:cover}.object-center{object-position:center}.p-5{padding:1.25rem}.p-1{padding:0.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-5{padding-top:1.25rem;padding-bottom:1.25rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-24{padding-top:6rem;padding-bottom:6rem}.px-20{padding-left:5rem;padding-right:5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pl-10{padding-left:2.5rem}.pr-20{padding-right:5rem}.text-left{text-align:left}.text-center{text-align:center}.font-\[Poppins\]{font-family:Poppins}.text-\[17px\]{font-size:17px}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-base{font-size:1rem;line-height:1.5rem}.text-\[11px\]{font-size:11px}.text-2xl{font-size:1.5rem;line-height:2rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-medium{font-weight:500}.font-semibold{font-weight:600}.font-normal{font-weight:400}.font-bold{font-weight:700}.uppercase{text-transform:uppercase}.leading-loose{line-height:2}.leading-8{line-height:2rem}.leading-relaxed{line-height:1.625}.tracking-widest{letter-spacing:0.1em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-shopifyGreen{--tw-text-opacity:1;color:rgb(0 76 63 / var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.text-black{--tw-text-opacity:1;color:rgb(0 0 0 / var(--tw-text-opacity))}.text-black\/70{color:rgb(0 0 0 / 0.7)}.text-black\/60{color:rgb(0 0 0 / 0.6)}.text-\[\#b6babf\]{--tw-text-opacity:1;color:rgb(182 186 191 / var(--tw-text-opacity))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-200{transition-duration:200ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.hover\:border-l-\[3px\]:hover{border-left-width:3px}.hover\:border-green-700:hover{--tw-border-opacity:1;border-color:rgb(21 128 61 / var(--tw-border-opacity))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.hover\:bg-shopifyGreen:hover{--tw-bg-opacity:1;background-color:rgb(0 76 63 / var(--tw-bg-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.focus\:border-shopifyGreen:focus{--tw-border-opacity:1;border-color:rgb(0 76 63 / var(--tw-border-opacity))}.focus\:bg-transparent:focus{background-color:transparent}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-1:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.focus\:ring-shopifyGreen:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(0 76 63 / var(--tw-ring-opacity))}.group:hover .group-hover\:flex{display:flex}.group:hover .group-hover\:translate-x-1{--tw-translate-x:0.25rem;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@media (min-width: 640px){.sm\:mt-0{margin-top:0px}.sm\:ml-auto{margin-left:auto}.sm\:flex-row{flex-direction:row}.sm\:justify-start{justify-content:flex-start}.sm\:text-left{text-align:left}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 768px){.md\:mx-20{margin-left:5rem;margin-right:5rem}.md\:mx-0{margin-left:0px;margin-right:0px}.md\:mb-0{margin-bottom:0px}.md\:mr-auto{margin-right:auto}.md\:ml-4{margin-left:1rem}.md\:mt-0{margin-top:0px}.md\:flex{display:flex}.md\:inline-flex{display:inline-flex}.md\:hidden{display:none}.md\:w-1\/2{width:50%}.md\:w-full{width:100%}.md\:w-9{width:2.25rem}.md\:w-1\/6{width:16.666667%}.md\:translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:flex-row-reverse{flex-direction:row-reverse}.md\:flex-nowrap{flex-wrap:nowrap}.md\:items-start{align-items:flex-start}.md\:items-end{align-items:flex-end}.md\:items-center{align-items:center}.md\:justify-start{justify-content:flex-start}.md\:p-5{padding:1.25rem}.md\:py-1{padding-top:0.25rem;padding-bottom:0.25rem}.md\:py-3{padding-top:0.75rem;padding-bottom:0.75rem}.md\:px-5{padding-left:1.25rem;padding-right:1.25rem}.md\:px-20{padding-left:5rem;padding-right:5rem}.md\:py-10{padding-top:2.5rem;padding-bottom:2.5rem}.md\:py-4{padding-top:1rem;padding-bottom:1rem}.md\:px-7{padding-left:1.75rem;padding-right:1.75rem}.md\:pl-4{padding-left:1rem}.md\:pr-16{padding-right:4rem}.md\:pl-20{padding-left:5rem}.md\:text-left{text-align:left}.md\:text-base{font-size:1rem;line-height:1.5rem}.md\:font-bold{font-weight:700}}@media (min-width: 1024px){.lg\:inline-block{display:inline-block}.lg\:h-10{height:2.5rem}.lg\:w-full{width:100%}.lg\:w-1\/2{width:50%}.lg\:w-3\/4{width:75%}.lg\:w-1\/6{width:16.666667%}.lg\:max-w-2xl{max-width:42rem}.lg\:flex-grow{flex-grow:1}.lg\:grid-cols-5{grid-template-columns:repeat(5, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-start{align-items:flex-start}.lg\:gap-x-14{column-gap:3.5rem}.lg\:px-5{padding-left:1.25rem;padding-right:1.25rem}.lg\:pr-24{padding-right:6rem}.lg\:text-left{text-align:left}}@media (min-width: 1280px){.xl\:container{width:100%}@media (min-width: 640px){.xl\:container{max-width:640px}}@media (min-width: 768px){.xl\:container{max-width:768px}}@media (min-width: 1024px){.xl\:container{max-width:1024px}}@media (min-width: 1280px){.xl\:container{max-width:1280px}}@media (min-width: 1536px){.xl\:container{max-width:1536px}}.xl\:mx-40{margin-left:10rem;margin-right:10rem}.xl\:inline{display:inline}.xl\:w-\[60\%\]{width:60%}.xl\:w-\[40rem\]{width:40rem}.xl\:grid-cols-7{grid-template-columns:repeat(7, minmax(0, 1fr))}.xl\:flex-row-reverse{flex-direction:row-reverse}.xl\:p-20{padding:5rem}.xl\:px-16{padding-left:4rem;padding-right:4rem}.xl\:py-20{padding-top:5rem;padding-bottom:5rem}.xl\:px-14{padding-left:3.5rem;padding-right:3.5rem}.xl\:px-56{padding-left:14rem;padding-right:14rem}.xl\:px-40{padding-left:10rem;padding-right:10rem}.xl\:text-left{text-align:left}.xl\:text-5xl{font-size:3rem;line-height:1}.xl\:text-4xl{font-size:2.25rem;line-height:2.5rem}.xl\:text-lg{font-size:1.125rem;line-height:1.75rem}.xl\:text-3xl{font-size:1.875rem;line-height:2.25rem}.xl\:text-2xl{font-size:1.5rem;line-height:2rem}.xl\:first-letter\:font-semibold::first-letter{font-weight:600}}@media (min-width: 1536px){.\32xl\:container{width:100%}@media (min-width: 640px){.\32xl\:container{max-width:640px}}@media (min-width: 768px){.\32xl\:container{max-width:768px}}@media (min-width: 1024px){.\32xl\:container{max-width:1024px}}@media (min-width: 1280px){.\32xl\:container{max-width:1280px}}@media (min-width: 1536px){.\32xl\:container{max-width:1536px}}.\32xl\:mx-56{margin-left:14rem;margin-right:14rem}.\32xl\:mt-4{margin-top:1rem}.\32xl\:flex{display:flex}.\32xl\:w-\[70\%\]{width:70%}.\32xl\:max-w-3xl{max-width:48rem}.\32xl\:px-5{padding-left:1.25rem;padding-right:1.25rem}.\32xl\:px-56{padding-left:14rem;padding-right:14rem}.\32xl\:py-10{padding-top:2.5rem;padding-bottom:2.5rem}}</style></head>
+
+<body class="font-[Poppins] text-white">
+  <!-- Navbar -->
+  <header class="text-gray-600 body-font lg:px-5 xl:px-16 bg-[#FBF7ED]">
+    <div class="flex flex-row flex-wrap items-center justify-between px-2 mx-auto 2xl:container md:p-5 md:flex-row">
+      <a class="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
+        <img class="h-16 translate-y-1 md:translate-y-0" src="./20_files/00.png" alt="" <="" a="">
+        </a><nav class="md:mr-auto hidden md:ml-4 md:py-1 md:pl-4 md:flex flex-wrap items-center text-[17px] justify-center"><a class="flex items-center mb-4 font-medium text-gray-900 title-font md:mb-0">
+          </a><a class="relative mr-8 font-medium group hover:text-gray-900">
+            Start
+            <ul class="absolute flex-col hidden w-56 py-1 font-semibold bg-white border rounded shadow-lg top-6 group-hover:flex">
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Start Your Business
+              </li>
+              <div class="h-[1px] w-[80%] mx-auto bg-gray-300"></div>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Branding
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Online presence
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Store set up
+              </li>
+            </ul>
+          </a>
+          <a class="relative mr-8 font-medium group hover:text-gray-900">
+            Sell
+            <ul class="absolute flex-col hidden w-56 py-1 font-semibold bg-white border rounded shadow-lg top-6 group-hover:flex">
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Sell everywhere
+              </li>
+              <div class="h-[1px] w-[80%] mx-auto bg-gray-300"></div>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Online store
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Point of Sale
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Buy Button
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Checkout
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Sales channels
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Custom storefront tools
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                International commerce
+              </li>
+            </ul>
+          </a>
+          <a class="relative mr-8 font-medium group hover:text-gray-900">
+            Market
+            <ul class="absolute flex-col hidden w-56 py-1 font-semibold bg-white border rounded shadow-lg top-6 group-hover:flex">
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Market Your Business
+              </li>
+              <div class="h-[1px] w-[80%] mx-auto bg-gray-300"></div>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Email Marketing
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Marketing automation
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Customer groups
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Business chat
+              </li>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Facebook Ads
+              </li>
+            </ul>
+          </a>
+          <a class="relative mr-8 font-medium group hover:text-gray-900">
+            Manage
+            <ul class="absolute flex-col hidden w-56 py-1 font-semibold bg-white border rounded shadow-lg top-6 group-hover:flex">
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Manage everything
+              </li>
+              <div class="h-[1px] w-[80%] mx-auto bg-gray-300"></div>
+              <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                Ecommerce automation
+              </li>
+            </ul>
+          </a>
+        </nav>
+
+        <div class="flex">
+          <nav class="md:mr-auto hidden md:ml-4 md:py-1 md:pl-4 md:flex flex-wrap items-center text-[17px] justify-center">
+            <a class="relative mr-8 font-medium group hover:text-gray-900">
+              Pricing
+            </a>
+            <a class="relative mr-8 font-medium group hover:text-gray-900">
+              Learn
+              <ul class="absolute flex-col hidden w-48 py-1 font-semibold bg-white border rounded shadow-lg top-6 -right-3 group-hover:flex">
+                <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                  Help Center
+                </li>
+                <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                  Blog
+                </li>
+                <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                  Business Courses
+                </li>
+                <li class="hover:bg-gray-100 hover:border-l-[3px] px-5 py-3 text-sm duration-300 border-l-[3px] border-transparent hover:border-green-700">
+                  Guides
+                </li>
+              </ul>
+            </a>
+            <a class="relative mr-8 font-medium group hover:text-gray-900">
+              Log in
+            </a>
+          </nav>
+          <button class="inline-flex items-center px-2 py-1 font-normal text-white duration-300 border-0 rounded shadow-md md:hidden bg-shopifyLightGreen md:py-3 md:px-5 focus:outline-none hover:bg-shopifyGreen xl:first-letter:font-semibold md:mt-0">
+            Try for free
+          </button>
+        </div>
+
+        <button class="items-center hidden px-2 py-1 font-normal text-white duration-300 border-0 rounded shadow-md md:inline-flex bg-shopifyLightGreen md:py-3 md:px-5 focus:outline-none hover:bg-shopifyGreen xl:first-letter:font-semibold md:mt-0">
+          Try for free
+        </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-gray-600 lg:px-5 xl:px-16 bg-[#FBF7ED] body-font">
+    <div class="flex flex-col items-center px-5 py-2 mx-auto xl:container md:flex-row">
+      <div class="flex flex-col items-center text-center lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0">
+        <h1 class="mb-4 text-3xl font-semibold title-font sm:text-5xl md:font-bold text-shopifyGreen">
+          The easiest way to sell online in India
+        </h1>
+        <p class="mb-8 leading-loose">
+          Try one of the most powerful platforms on the market for free. No
+          technical knowledge needed.
+        </p>
+        <div class="flex flex-col justify-center w-full md:flex-row md:justify-start md:items-end">
+          <div class="space-x-2 md:w-full lg:w-full">
+            <input type="text" placeholder="Enter your email address" name="hero-field" class="w-full xl:w-[60%] 2xl:w-[70%] inline rounded border bg-opacity-50 border-gray-300 focus:ring-1 focus:bg-transparent focus:border-shopifyGreen text-base outline-none text-gray-700 focus:ring-shopifyGreen py-2 px-5 leading-8 transition-colors duration-200 ease-in-out">
+            <button class="inline-flex items-center px-5 py-3 mx-auto mt-2 font-semibold text-white duration-300 border-0 rounded shadow-md bg-shopifyLightGreen focus:outline-none hover:bg-shopifyGreen md:mt-0">
+              Try for free
+            </button>
+          </div>
+        </div>
+
+        <p class="text-[11px] mt-4 text-gray-500 mb-8 w-full">
+          Try Shopify free for 14 days, no credit card required. By entering
+          your email, you agree to receive marketing emails from Shopify.
+        </p>
+      </div>
+      <div class="w-5/6 lg:max-w-2xl 2xl:max-w-3xl lg:w-full md:w-1/2">
+        <img class="object-cover object-center rounded" alt="hero" src="./20_files/01.webp">
+      </div>
+    </div>
+  </section>
+
+  <!-- Bring Your Business Online -->
+  <section class="bg-shopifyGreen">
+    <div class="container px-6 py-12 mx-auto xl:py-20 2xl:px-5 xl:px-14 xl:text-left">
+      <h1 class="text-2xl text-white xl:text-5xl">
+        Bring your business online
+      </h1>
+      <div class="justify-between 2xl:flex">
+        <p class="mt-4 text-sm leading-relaxed text-white md:text-base">
+          Create an ecommerce website backed by powerful tools that help you
+          find customers, drive sales, and manage your day-to-day.
+        </p>
+        <p class="mt-2 font-semibold text-white 2xl:mt-4">
+          Explore more examples
+        </p>
+      </div>
+
+      <div class="mt-12">
+        <div class="grid grid-cols-2 text-sm md:grid-cols-3 lg:grid-cols-5 md:text-base gap-x-4 gap-y-8">
+          <div class="">
+            <img class="rounded-lg shadow-lg" src="./20_files/02.webp" alt="">
+            <p class="mt-3 font-semibold uppercase">Food &amp; Drink</p>
+            <p class="">Blue Tokai</p>
+          </div>
+          <div class="">
+            <img class="rounded-lg shadow-lg" src="./20_files/03.webp" alt="">
+            <p class="mt-3 font-semibold uppercase">Jewelry</p>
+            <p class="">Quirksmith</p>
+          </div>
+          <div class="">
+            <img class="rounded-lg shadow-lg" src="./20_files/04.webp" alt="">
+            <p class="mt-3 font-semibold uppercase">Electronics</p>
+            <p class="">Crossbeats</p>
+          </div>
+          <div class="md:hidden lg:inline-block">
+            <img class="rounded-lg shadow-lg" src="./20_files/05.webp" alt="">
+            <p class="mt-3 font-semibold uppercase">Beauty</p>
+            <p class="">Mcaffeine</p>
+          </div>
+          <div class="hidden lg:inline-block">
+            <img class="rounded-lg shadow-lg" src="./20_files/06.webp" alt="">
+            <p class="mt-3 font-semibold uppercase">Fashion</p>
+            <p class="">Bunaai</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-24">
+        <h1 class="text-2xl">Take the best path forward</h1>
+        <div class="grid grid-cols-1 mt-12 mr-3 gap-y-14 gap-x-10 lg:grid-cols-4 md:grid-cols-2">
+          <div class="space-y-3">
+            <img class="w-8 md:w-9" src="./20_files/01icon.jpg" alt="">
+            <p class="font-semibold">Start an online business</p>
+            <p class="text-sm">
+              Create a business, whether you’ve got a fresh idea or are
+              looking for a new way to make money.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <img class="w-8 md:w-9" src="./20_files/02icon.jpg" alt="">
+            <p class="font-semibold">Move your business online</p>
+            <p class="text-sm">
+              Turn your retail store into an online store and keep serving
+              customers without missing a beat.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <img class="w-8 md:w-9" src="./20_files/03icon.jpg" alt="">
+            <p class="font-semibold">Switch to Shopify</p>
+            <p class="text-sm">
+              Bring your business to Shopify, no matter which ecommerce
+              platform you’re currently using.
+            </p>
+          </div>
+          <div class="space-y-3">
+            <img class="w-8 md:w-9" src="./20_files/04icon.jpg" alt="">
+            <p class="font-semibold">Hire a Shopify expert</p>
+            <p class="text-sm">
+              Get set up with the help of a trusted freelancer or agency from
+              the Shopify Experts Marketplace.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- With you wherever you’re going -->
+  <section class="mt-20 text-black">
+    <div class="px-3 text-center">
+      <h1 class="text-2xl xl:text-4xl">With you wherever you’re going</h1>
+      <p class="xl:w-[40rem] mx-auto mt-5 text-black/70 text-base xl:text-lg">
+        One platform with all the ecommerce and point of sale features you
+        need to start, run, and grow your business.
+      </p>
+    </div>
+    <div class="mt-20">
+      <div class="flex flex-col-reverse items-center justify-center px-5 gap-x-20 gap-y-5 md:flex-row">
+        <div>
+          <video autoplay="" width="500px" src="./assets/video01.webm" alt=""></video>
+        </div>
+        <div>
+          <h1 class="text-2xl xl:text-3xl">Sell everywhere</h1>
+          <p class="max-w-lg mx-auto mt-5 text-base text-black/70">
+            Use one platform to sell products to anyone, anywhere—in person
+            with Point of Sale and online through your website, social media,
+            and online marketplaces.
+          </p>
+          <button class="mt-5 font-semibold group text-shopifyGreen">
+            Explore ways to sell
+            <img width="20px" class="inline -mt-[1px] duration-300 group-hover:translate-x-1" src="./20_files/right-arrows.png" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col-reverse items-center justify-center px-5 mt-10 gap-x-20 gap-y-5 md:flex-row-reverse">
+        <div>
+          <img width="600px" src="./20_files/07.webp" alt="">
+        </div>
+        <div>
+          <h1 class="text-2xl xl:text-3xl">Explore ways to sell </h1>
+          <p class="max-w-lg mx-auto mt-5 text-base text-black/70">
+            Take the guesswork out of marketing with built-in tools that help you create, execute, and analyze digital
+            marketing campaigns.
+          </p>
+          <button class="mt-5 font-semibold group text-shopifyGreen">
+            Explore how to market your business
+            <img width="20px" class="inline -mt-[1px] duration-300 group-hover:translate-x-1" src="./20_files/right-arrows.png" alt="">
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col-reverse items-center justify-center px-5 mt-10 gap-x-20 gap-y-5 md:flex-row">
+        <div>
+          <img width="600px" class="rounded-lg shadow-lg" src="./20_files/21.jpg" alt="">
+        </div>
+        <div>
+          <h1 class="text-2xl xl:text-3xl">Manage everything</h1>
+          <p class="max-w-md mx-auto mt-5 text-base text-black/70">
+            Gain the insights you need to grow—use a single dashboard to manage orders, shipping, and payments anywhere
+            you go.
+          </p>
+          <button class="mt-5 font-semibold group text-shopifyGreen">
+            Explore how to manage your business
+            <img width="20px" class="inline -mt-[1px] duration-300 group-hover:translate-x-1" src="./20_files/right-arrows.png" alt="">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-[#F3FCF4] mt-32 px-5 py-5 md:px-20 md:py-10 xl:px-56 xl:py-20">
+    <h1 class="mb-10 text-xl text-shopifyGreen xl:text-4xl">Explore more from Shopify in India</h1>
+    <div class="flex flex-col-reverse text-black bg-white md:flex-row">
+      <div class="flex flex-col justify-between py-10 pl-10 pr-20 space-y-5">
+        <h1 class="font-bold">START</h1>
+        <div>
+          <h1 class="mb-3 text-xl xl:text-2xl">Launch your store with the help of a Shopify Expert</h1>
+          <p>Find hundreds of experts from India ready to help you get your store up and running, from choosing a theme
+            to
+            building a fully customized site.</p>
+        </div>
+        <button class="font-semibold text-left group text-shopifyGreen">
+          Browse Experts in India
+          <img width="20px" class="inline -mt-[1px] duration-300 group-hover:translate-x-1" src="./20_files/right-arrows.png" alt="">
+        </button>
+      </div>
+      <div>
+        <img class="object-cover h-full overflow-hidden" src="./20_files/10.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- Lady Seller -->
+  <section class="px-5 py-5 md:px-20 md:py-10 xl:px-40 2xl:px-56 2xl:py-10">
+    <div class="flex flex-col-reverse items-center h-[80vh] text-black bg-white bg-shopifyGreen xl:flex-row-reverse">
+      <div class="p-5 text-center xl:p-20">
+        <p class="mb-3 text-xl font-medium text-white xl:text-3xl">
+          “Shopify was my knight in shining armor when I exhausted every other possibility of getting my online store up
+          and running. It was stunningly easy to use, with more features and plug-ins that I didn’t even know I wanted.”
+        </p>
+        <img class="h-20 mx-auto" src="./20_files/12.png" alt="">
+        <p class="text-white">Alicia | Alicia Souza</p>
+      </div>
+      <div class="h-full overflow-hidden">
+        <img class="object-cover overflow-hidden" src="./20_files/22.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="grid grid-cols-2 mx-5 my-5 md:grid-cols-3 place xl:grid-cols-7 place-content-center place-items-center lg:gap-x-14 md:mx-20 xl:mx-40 2xl:mx-56 ">
+    <img class="h-6 mt-2 lg:h-10" src="./20_files/13.webp" alt="">
+    <img class="h-6 mt-2 lg:h-10" src="./20_files/14.webp" alt="">
+    <img class="h-6 mt-2 lg:h-10" src="./20_files/15.png" alt="">
+    <img class="h-6 mt-2 lg:h-10" src="./20_files/16.webp" alt="">
+    <img class="h-6 mt-2 lg:h-10" src="./20_files/17.webp" alt="">
+    <img class="h-6 mt-2 lg:h-10" src="./20_files/18.webp" alt="">
+    <img class="hidden h-6 mt-2 lg:h-10 xl:inline" src="./20_files/19.webp" alt="">
+  </section>
+
+  <section class="bg-[#FBF7ED] px-5 my-14 md:px-20  xl:px-40 2xl:px-56 ">
+    <div class="flex flex-col text-center lg:text-left lg:flex-row">
+      <div class="flex flex-col lg:w-1/2">
+        <h1 class="py-10 text-2xl text-black lg:w-3/4 xl:text-4xl">Get the help you need, every step of the way</h1>
+
+        <div class="text-black">
+          <h1 class="text-lg font-medium ">Shopify Support</h1>
+          <p class="max-w-md mx-auto mt-3 text-base md:mx-0 lg:w-1/2 text-black/70">
+            Contact support 24/7, whether you’re troubleshooting issues or looking for business advice.
+          </p>
+          <button class="mt-5 font-semibold group text-shopifyGreen">
+            Contact support
+            <img width="20px" class="inline -mt-[1px] duration-300 group-hover:translate-x-1" src="./20_files/right-arrows.png" alt="">
+          </button>
+        </div>
+
+        <div class="mt-10 text-black">
+          <h1 class="text-lg font-medium ">Shopify App Store</h1>
+          <p class="max-w-md mx-auto mt-3 text-base md:mx-0 lg:w-1/2 text-black/70">
+            Add features and functionality to your business with 6,000+ apps that integrate directly with Shopify.
+          </p>
+          <button class="mt-5 font-semibold group text-shopifyGreen">
+            Visit the Shopify App Store
+            <img width="20px" class="inline -mt-[1px] duration-300 group-hover:translate-x-1" src="./20_files/right-arrows.png" alt="">
+          </button>
+        </div>
+
+        <div class="my-10 text-black">
+          <h1 class="text-lg font-medium ">Shopify Experts Marketplace</h1>
+          <p class="max-w-md mx-auto mt-3 text-base md:mx-0 lg:w-1/2 text-black/70">
+            Hire a Shopify expert to help you with everything from store setup to SEO. </p>
+          <button class="mt-5 font-semibold group text-shopifyGreen">
+            Explore the Shopify Experts Marketplace
+            <img width="20px" class="inline -mt-[1px] duration-300 group-hover:translate-x-1" src="./20_files/right-arrows.png" alt="">
+          </button>
+        </div>
+
+      </div>
+
+      <div class=" lg:w-1/2">
+        <img class="object-cover h-full overflow-hidden" src="./20_files/20.webp" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="px-2 text-center text-black my-14 md:px-20 xl:px-40 2xl:px-56">
+    <h1 class="text-2xl xl:text-4xl ">Start your business journey with
+      <span class="font-bold">
+        Shopify
+      </span>
+    </h1>
+    <p class="px-4 my-5 text-sm xl:text-lg text-black/60">Try Shopify for free, and explore all the tools and services
+      you need to
+      start,
+      run, and grow
+      your business.
+    </p>
+
+    <button class="items-center px-5 py-3 font-normal text-white duration-300 border-0 rounded shadow-md md:inline-flex bg-shopifyLightGreen md:py-4 md:px-7 focus:outline-none hover:bg-shopifyGreen xl:first-letter:font-semibold md:mt-0">
+      Start free trial
+    </button>
+  </section>
+
+
+  <footer class="text-[#b6babf] body-font bg-[#002e25] mt-24">
+    <div class="container flex flex-col flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-nowrap">
+
+      <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+        <div class="w-full px-4 lg:w-1/6 md:w-1/6">
+          <h2 class="mb-3 text-sm font-bold tracking-widest text-white title-font">ONLINE STORE</h2>
+          <nav class="mb-10 list-none ">
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Sell online</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Features</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Examples</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Website builder</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Online retail</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/6 md:w-1/6">
+
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Ecommerce website</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Domain names</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Themes</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Shopping cart</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Ecommerce hosting</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/6 md:w-1/6">
+
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Mobile commerce</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Ecommerce software</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Online store builder</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Dropshipping Business</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Store themes</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/6 md:w-1/6">
+          <h2 class="mb-3 text-sm font-bold tracking-widest text-white title-font">POINT OF SALE</h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Point of sale</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Features</a>
+            </li>
+
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/6 md:w-1/6">
+          <h2 class="mb-3 text-sm font-bold tracking-widest text-white title-font">SUPPORT</h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">24/7 support</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Shopify Help Center</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Shopify Community</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">API documentation</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Free tools</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Free stock photos</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Websites for sale</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Logo Maker</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Business name generator</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Research</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Legal</a>
+            </li>
+          </nav>
+        </div>
+        <div class="w-full px-4 lg:w-1/6 md:w-1/6">
+          <h2 class="mb-3 text-sm font-bold tracking-widest text-white title-font">SHOPIFY</h2>
+          <nav class="mb-10 list-none">
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Contact</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Partner program</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Affiliate program</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">App developers</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Investors</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Blog topics</a>
+            </li>
+            <li>
+              <a class="text-[#b6babf] hover:text-white leading-8">Community Events</a>
+            </li>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class=" divide-blue-200 bg-[#002e25] ">
+      <div class="container flex flex-col flex-wrap gap-10 px-20 py-4 mx-auto sm:flex-row">
+
+        <span class="inline-flex justify-center mt-2 sm:mt-0 sm:justify-start">
+          <a class="p-1 mr-4 text-black bg-white rounded-full">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+            </svg>
+          </a>
+          <a class="p-1 ml-3 mr-4 text-black bg-white rounded-full">
+            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+              </path>
+            </svg>
+          </a>
+          <a class="p-1 ml-3 mr-4 text-black bg-white rounded-full">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </a>
+          <a class="p-1 ml-3 mr-4 text-black bg-white rounded-full">
+            <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+              <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </a>
+        </span>
+
+        <p class="text-[#b6babf] text-sm text-center sm:ml-auto sm:text-left">© Terms of Service Privacy Policy
+          <a href="https://newshopify.netlify.app/" rel="noopener noreferrer " class="ml-1 text-white " target="_blank">India</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+</body></html>
